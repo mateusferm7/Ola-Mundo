@@ -27,11 +27,42 @@
             <a href="https://www.instagram.com/">Instagram</a>
             
 
-<script src="scrip.js"></script> <!-- Para fazer link com java script 
+<script src="script.js"></script> <!-- Para fazer link com java script 
           -->
-        <hr>
+            <hr>
             <h3>Nosso blog</h3>
             <p></p>
+
+<footer>       
+            <script type="text/javascript">//Relogio
+
+                function startTime()
+                {
+                var today=new Date();
+                var h=today.getHours();
+                var m=today.getMinutes();
+                var s=today.getSeconds();
+                // add a zero in front of numbers<10
+                m=checkTime(m);
+                s=checkTime(s);
+                document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+                t=setTimeout('startTime()',500);
+                
+                }
+                
+                function checkTime(i)
+                {
+                if (i<10)
+                  {
+                  i="0" + i;
+                  }
+                return i;
+                }
+                </script>
+                <div id="txt">
+                <script type="text/javascript">document.write(startTime())</script>
+                </div>
+</footer> 
 </body>
 
 </html>
