@@ -27,6 +27,6 @@ footer {
         background: rgb(255, 0, 128);
         border-radius: 17px;  
         padding: 6px;
-        
+        box-shadow: 2px 2px 3px rgba(255, 0, 0, 0.473);
         
 }
